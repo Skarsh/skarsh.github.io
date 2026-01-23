@@ -1,0 +1,19 @@
+title: Skarsh's Blog
+description: A blog about programming and mathematics
+author: Skarsh
+url: "https://skarsh.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Kramdown settings
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Exclude from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

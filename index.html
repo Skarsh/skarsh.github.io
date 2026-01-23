@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<section class="intro">
+    <h1>Welcome</h1>
+    <p>A blog about programming and mathematics.</p>
+</section>
+
+<section class="posts-list">
+    <h2>Posts</h2>
+    <ul class="post-list">
+        {% for post in site.posts %}
+        <li>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
